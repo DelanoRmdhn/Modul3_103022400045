@@ -51,6 +51,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Celcius", "Fahrenheit", "Kelvin", "Reamur" });
             comboBox2.Location = new Point(69, 211);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(151, 28);
@@ -84,6 +85,7 @@
             btnConvert.TabIndex = 4;
             btnConvert.Text = "Convert";
             btnConvert.UseVisualStyleBackColor = true;
+            btnConvert.Click += btnConvert_Click;
             // 
             // label3
             // 
@@ -100,6 +102,7 @@
             txtNilaiAwal.Name = "txtNilaiAwal";
             txtNilaiAwal.Size = new Size(125, 27);
             txtNilaiAwal.TabIndex = 6;
+            txtNilaiAwal.TextChanged += txtNilaiAwal_TextChanged;
             // 
             // txtNilaiAkhir
             // 
